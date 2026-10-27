@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ledger-race"
+version = "0.1.0"
+description = "Concurrency and idempotency checker for wallet/payment APIs with accounting invariants on the ledger"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+
+[project.scripts]
+ledger-race = "ledgerrace.cli:main"
+
+[tool.setuptools]
+packages = ["ledgerrace"]
